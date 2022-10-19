@@ -47,7 +47,7 @@ SELECT
    *
 FROM
     tbl1
-ORDEN BY 
-    c14
 WHERE
 K0 = 'A' 
+ORDER BY 
+    c14
