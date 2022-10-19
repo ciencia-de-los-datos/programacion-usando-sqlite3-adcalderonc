@@ -43,4 +43,11 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
-
+SELECT
+   avg(c21)
+FROM
+    tbl1
+WHERE
+    c02 = 100 OR c02=600
+GROUP BY
+    K0
