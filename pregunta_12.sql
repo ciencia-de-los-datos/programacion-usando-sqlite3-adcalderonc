@@ -42,3 +42,11 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+SELECT
+    K0
+FROM
+    tbl1
+WHERE
+    c12= (SELECT MAX(c12) FROM tbl2)
+GROUP BY
+    K0
