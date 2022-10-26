@@ -43,11 +43,7 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
-SELECT
-   avg(c21)
-FROM
-    tbl1
-WHERE
-    c02 = 100 OR c02=600
-GROUP BY
-    K0
+SELECT T1.K0, AVG(T2.c21) AS 'avg(c21)' 
+    FROM tbl1 T1, tbl2 T2  
+    WHERE T1.K1 = T2.K1 AND T1.c13 > 400 
+    GROUP BY K0
