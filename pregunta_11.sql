@@ -38,10 +38,7 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
-SELECT
-   c14,
-   COUNT(*)
-FROM
-    tbl1
-WHERE
-    YEAR (c14) = 2018
+SELECT COUNT(*)
+    FROM tbl1 
+    WHERE STRFTIME('%Y', c14)='2018' 
+    GROUP BY STRFTIME('%Y', c14)
